@@ -20,4 +20,7 @@ describe('pingPong', function() {
   it('will ignore characters and use the number at the beginning of a given string', function() {
     expect(pingPong('3abc')).to.equal('ping');
   });
+  it('will ignore strings that contain no numbers at the front', function() {
+    expect(pingPong('hello')).to.equal('');
+  });
 });
