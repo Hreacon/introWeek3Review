@@ -11,7 +11,7 @@ Shows the number the user put in, unless the user puts in a number divisible by 
 ## Setup/Installation Requirements
 
 Clone repository, open index.html in borwser.
-Or view in browser at [here](http://hreacon.github.io/introWeek2Review/)
+Or view in browser at [here](http://hreacon.github.io/introWeek3Review/)
 
 ## Support and contact details
 
