@@ -1,6 +1,8 @@
 function pingPong(number) {
   var output = parseInt(number);
-  if( output%15 === 0 )
+  if( isNaN(output) )
+    output = '';
+  else if( output%15 === 0 )
     output = 'pingpong';
   else if( output%3 === 0 )
     output = 'ping';
