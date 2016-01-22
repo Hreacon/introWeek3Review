@@ -14,5 +14,7 @@ describe('pingPong', function() {
   it('will return ping even when given negative numbers divisible by 3', function() {
     expect(pingPong(-6)).to.equal('ping');
   });
-  
+  it('will handle being given numbers as strings', function() {
+    expect(pingPong('4')).to.equal(4);
+  });
 });
