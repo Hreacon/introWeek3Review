@@ -11,4 +11,8 @@ describe('pingPong', function() {
   it('will return pingpong when given numbers divisible by 15', function() {
     expect(pingPong(30)).to.equal('pingpong');
   });
+  it('will return ping even when given negative numbers divisible by 3', function() {
+    expect(pingPong(-6)).to.equal('ping');
+  });
+  
 });
