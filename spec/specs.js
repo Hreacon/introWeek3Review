@@ -17,4 +17,7 @@ describe('pingPong', function() {
   it('will handle being given numbers as strings', function() {
     expect(pingPong('4')).to.equal(4);
   });
+  it('will ignore characters and use the number at the beginning of a given string', function() {
+    expect(pingPong('3abc')).to.equal('ping');
+  });
 });
