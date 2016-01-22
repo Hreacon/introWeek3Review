@@ -8,5 +8,15 @@ function pingPong(number) {
     output = 'ping';
   else if( output%5 === 0 )
     output = 'pong';
-  return output;
+  return output.toString();
 }
+
+$(document).ready(function() {
+  $('form#pingpong').submit(function(event) {
+    var output = pingPong($('#input').val());
+    if(output.length > 0)
+      $('.output ul').prepend('<li>' + output + '</li>');
+    $('#input').val('');
+    event.preventDefault();
+  });
+});
