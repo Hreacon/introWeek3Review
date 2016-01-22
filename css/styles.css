@@ -1,0 +1,23 @@
+.header {
+  text-align: center;
+  font-size:3em;
+  padding:20px;
+}
+
+.content {
+  float:left;
+}
+
+.output {
+  margin-left:40%;
+}
+
+body {
+  background: #d7fff1;
+}
+.sidebar {
+  background: #aafcb8;
+}
+.header {
+  background: #77af9c;
+}
