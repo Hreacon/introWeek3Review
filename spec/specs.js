@@ -8,5 +8,7 @@ describe('pingPong', function() {
   it('will return pong when given numbers divisible by 5', function() {
     expect(pingPong(10)).to.equal('pong');
   });
-
+  it('will return pingpong when given numbers divisible by 15', function() {
+    expect(pingPong(30)).to.equal('pingpong');
+  });
 });
