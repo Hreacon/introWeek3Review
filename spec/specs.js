@@ -1,26 +1,14 @@
 describe('pingPong', function() {
-  it('will return the number provided', function() {
-    expect(pingPong(1)).to.equal(1);
+  it('will count up to the number provided', function() {
+    expect(pingPong(2)).to.eql([1,2]);
   });
-  it('will return ping when given numbers divisible by 3', function() {
-    expect(pingPong(6)).to.equal('ping');
+  it('will return ping when counting numbers divisible by 3', function() {
+    expect(pingPong(3)).to.eql([1,2,'ping']);
   });
-  it('will return pong when given numbers divisible by 5', function() {
-    expect(pingPong(10)).to.equal('pong');
+  it('will return pong when counting numbers divisible by 5', function() {
+    expect(pingPong(5)).to.eql([1,2,'ping',4,'pong']);
   });
-  it('will return pingpong when given numbers divisible by 15', function() {
-    expect(pingPong(30)).to.equal('pingpong');
-  });
-  it('will return ping even when given negative numbers divisible by 3', function() {
-    expect(pingPong(-6)).to.equal('ping');
-  });
-  it('will handle being given numbers as strings', function() {
-    expect(pingPong('4')).to.equal(4);
-  });
-  it('will ignore characters and use the number at the beginning of a given string', function() {
-    expect(pingPong('3abc')).to.equal('ping');
-  });
-  it('will ignore strings that contain no numbers at the front', function() {
-    expect(pingPong('hello')).to.equal('');
+  it('will return pingpong when counting numbers divisible by 15', function() {
+    expect(pingPong(15)).to.eql([1,2,'ping',4,'pong','ping',7,8,'ping','pong',11,'ping',13,14,'pingpong']);
   });
 });
